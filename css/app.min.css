@@ -13,4 +13,89 @@ a {
   text-decoration: none;
 }
 
+input, button {
+  border: none;
+  outline: none;
+}
+
+.header .top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1E1F29;
+  color: #FFF;
+  font-size: 0.8rem;
+}
+.header .top-navbar-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.header .top-navbar-user {
+  display: flex;
+  gap: 1rem;
+}
+.header .top-navbar i {
+  color: #D10024;
+}
+.header .main-navbar {
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15161D;
+}
+.header .main-navbar a {
+  color: #FFF;
+}
+.header .main-navbar-logo {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.header .main-navbar-logo i {
+  color: #D10024;
+}
+.header .main-navbar .searchbox {
+  display: flex;
+}
+.header .main-navbar .searchbox input {
+  width: 350px;
+  height: 40px;
+  padding: 8px 25px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.header .main-navbar .searchbox input::placeholder {
+  font-size: 0.9rem;
+}
+.header .main-navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-pattern {
+  background-color: #D10024;
+  padding: 8px 12px;
+  color: #FFF;
+  border-radius: 20px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.button-pattern:hover {
+  color: #D10024;
+  background-color: #FFF;
+  border: 2px solid #D10024;
+}
+
+.button-pattern.button-half {
+  height: 40px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 /*# sourceMappingURL=app.min.css.map */
