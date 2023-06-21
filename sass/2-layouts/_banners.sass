@@ -1,0 +1,37 @@
+@use '../1-base/variables'
+@use '../3-modules/mixins'
+  
+.banners-container
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 15%
+  padding: 1rem 2rem
+
+  .banner-box
+    width: 275px
+    height: 275px
+    color: variables.$light-color
+    background-color: variables.$primary-color
+    border-bottom-right-radius: 50%
+    opacity: .8
+    position: relative
+
+    &:hover
+      opacity: .9
+
+    &-title
+      font-size: 1.8rem
+      position: absolute
+      top: 0
+      left: 0
+      padding: 2rem
+      font-weight: 800
+    &-link
+      font-size: 1.3rem
+      position: absolute
+      bottom: 30px
+      left: 0
+      padding: 2rem
+      font-weight: 800
+      color: variables.$light-color

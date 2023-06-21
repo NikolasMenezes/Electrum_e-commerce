@@ -1,7 +1,8 @@
-@use '../1-base/_variables'
+@use '../1-base/variables'
+@use '../3-modules/mixins'
   
 .header
-
+  margin-bottom: 3rem
   .top-navbar
     display: flex
     justify-content: space-between
@@ -30,6 +31,7 @@
     justify-content: space-between
     align-items: center
     background-color: variables.$bg-color
+    border-bottom: 4px solid variables.$primary-color
       
       
     a
@@ -53,6 +55,53 @@
 
         &::placeholder
           font-size: .9rem
+    
     &-actions
       display: flex
-      gap: 1rem    
+      gap: 1rem
+
+      a:hover
+        color: variables.$primary-color
+        transition: .6s    
+
+      i
+        color: #fff
+        font-size: 15px
+
+      .wishlist-button
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 5px
+
+        span
+          @include mixins.headerSpan
+
+      .shopping-cart-button
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 5px
+
+        span
+          @include mixins.headerSpan
+
+  .bottom-navbar
+    padding: .5rem 2rem
+    box-shadow: 0px 0px 1px 1px rgba(0,0 ,0 ,0.5 )
+
+    &-list    
+      display: flex
+      gap: 10px 
+
+      &-links
+        font-size: .85rem
+        color: variables.$link-color
+        transition: 0.3s
+        border-bottom: 2px solid transparent
+        
+        &:hover
+          color: variables.$primary-color
+          border-bottom: 2px solid variables.$primary-color

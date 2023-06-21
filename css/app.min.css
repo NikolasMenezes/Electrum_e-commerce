@@ -18,6 +18,9 @@ input, button {
   outline: none;
 }
 
+.header {
+  margin-bottom: 3rem;
+}
 .header .top-navbar {
   display: flex;
   justify-content: space-between;
@@ -46,6 +49,7 @@ input, button {
   justify-content: space-between;
   align-items: center;
   background-color: #15161D;
+  border-bottom: 4px solid #D10024;
 }
 .header .main-navbar a {
   color: #FFF;
@@ -73,6 +77,119 @@ input, button {
 .header .main-navbar-actions {
   display: flex;
   gap: 1rem;
+}
+.header .main-navbar-actions a:hover {
+  color: #D10024;
+  transition: 0.6s;
+}
+.header .main-navbar-actions i {
+  color: #fff;
+  font-size: 15px;
+}
+.header .main-navbar-actions .wishlist-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.header .main-navbar-actions .wishlist-button span {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  background-color: #D10024;
+  color: #FFF;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .main-navbar-actions .shopping-cart-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.header .main-navbar-actions .shopping-cart-button span {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  background-color: #D10024;
+  color: #FFF;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .bottom-navbar {
+  padding: 0.5rem 2rem;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.header .bottom-navbar-list {
+  display: flex;
+  gap: 10px;
+}
+.header .bottom-navbar-list-links {
+  font-size: 0.85rem;
+  color: #2B2D42;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.header .bottom-navbar-list-links:hover {
+  color: #D10024;
+  border-bottom: 2px solid #D10024;
+}
+
+.banners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  padding: 1rem 2rem;
+}
+.banners-container .banner-box {
+  width: 275px;
+  height: 275px;
+  color: #FFF;
+  background-color: #D10024;
+  border-bottom-right-radius: 50%;
+  opacity: 0.8;
+  position: relative;
+}
+.banners-container .banner-box:hover {
+  opacity: 0.9;
+}
+.banners-container .banner-box-title {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  font-weight: 800;
+}
+.banners-container .banner-box-link {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  padding: 2rem;
+  font-weight: 800;
+  color: #FFF;
+}
+
+.products-container {
+  padding: 1rem 2rem;
+}
+.products-container .products-title {
+  font-weigth: 800;
+  font-size: 2rem;
 }
 
 .button-pattern {
