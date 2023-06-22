@@ -1,0 +1,20 @@
+@use '../1-base/variables'
+
+.label
+  width: 50px
+  height: 25px
+  font-size: .8rem
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid transparent
+  align-self: flex-end
+
+  &.new
+    color: variables.$light-color
+    background-color: variables.$primary-color
+  &.hot
+    color: variables.$primary-color
+    background-color: variables.$light-color
+    border: 1px solid variables.$primary-color
