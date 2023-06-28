@@ -233,6 +233,46 @@ input, button {
   color: #D10024;
 }
 
+.deal-container {
+  padding: 4rem;
+  background-color: #E4E7ED;
+  text-align: center;
+}
+.deal-container-boxes {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+.deal-container-boxes .deal-container-box {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: #D10024;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.deal-container-boxes .deal-container-box-number, .deal-container-boxes .deal-container-box-unity {
+  font-size: 1.1rem;
+}
+.deal-container-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.deal-container-subtitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
 .label {
   width: 50px;
   height: 25px;
