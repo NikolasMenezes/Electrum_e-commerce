@@ -1,0 +1,58 @@
+@use '../1-base/variables'
+
+.footer
+  padding: 2rem 4rem
+  background-color: variables.$secondary-bg-color
+  color: variables.$light-color
+
+  i
+    color: variables.$primary-color
+
+  &-top
+    display: flex
+    justify-content: center
+    gap: 35px
+
+    &-box:first-child
+      width: 30%
+
+    &-box
+      width: 20%
+
+      p
+        margin-bottom: 10px 
+
+      &-title
+        font-size: 1.2rem
+        margin-bottom: 1rem
+        text-transform: uppercase
+
+      &-description
+        font-size: 1rem
+        margin-bottom: 2rem
+        color: variables.$gray-text-color
+
+      &-list li a
+        color: variables.$link-color
+
+        &:hover
+          color: variables.$light-color
+
+  
+  &-bottom-cc
+    display: flex
+    justify-content: center
+    gap: 10px
+
+    i
+      font-size: 2rem
+      color: variables.$gray-text-color
+      transition: .3s
+      cursor: pointer
+
+      &:hover
+        color: variables.$primary-color
+  
+  &-bottom-copyright
+    margin-top: 2rem
+    text-align: center
