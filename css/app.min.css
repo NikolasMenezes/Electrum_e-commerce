@@ -30,6 +30,11 @@ input, button {
   color: #FFF;
   font-size: 0.8rem;
 }
+@media screen and (max-width: 425px) {
+  .header .top-navbar {
+    display: none;
+  }
+}
 .header .top-navbar-info {
   display: flex;
   align-items: center;
@@ -50,6 +55,11 @@ input, button {
   align-items: center;
   background-color: #15161D;
   border-bottom: 4px solid #D10024;
+}
+@media screen and (max-width: 425px) {
+  .header .main-navbar {
+    flex-direction: column;
+  }
 }
 .header .main-navbar a {
   color: #FFF;
@@ -119,6 +129,11 @@ input, button {
   padding: 0.5rem 2rem;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 425px) {
+  .header .bottom-navbar {
+    display: none;
+  }
+}
 .header .bottom-navbar-list {
   display: flex;
   gap: 10px;
@@ -137,6 +152,11 @@ input, button {
 .searchbox {
   display: flex;
 }
+@media screen and (max-width: 425px) {
+  .searchbox {
+    margin: 2rem 0;
+  }
+}
 .searchbox input {
   width: 350px;
   height: 40px;
@@ -144,6 +164,11 @@ input, button {
   border: 1px solid #E4E7ED;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
+}
+@media screen and (max-width: 425px) {
+  .searchbox input {
+    width: 100%;
+  }
 }
 .searchbox input::placeholder {
   font-size: 0.9rem;
@@ -156,6 +181,11 @@ input, button {
   gap: 15%;
   padding: 1rem 2rem;
 }
+@media screen and (max-width: 425px) {
+  .banners-container {
+    flex-direction: column;
+  }
+}
 .banners-container .banner-box {
   width: 275px;
   height: 275px;
@@ -164,6 +194,11 @@ input, button {
   border-bottom-right-radius: 50%;
   opacity: 0.8;
   position: relative;
+}
+@media screen and (max-width: 425px) {
+  .banners-container .banner-box {
+    margin-bottom: 2rem;
+  }
 }
 .banners-container .banner-box:hover {
   opacity: 0.9;
@@ -201,6 +236,11 @@ input, button {
   gap: 5%;
   justify-content: center;
 }
+@media screen and (max-width: 425px) {
+  .products-container .products-grid {
+    flex-direction: column;
+  }
+}
 .products-container .products-grid-box {
   height: 450px;
   padding: 1rem;
@@ -209,6 +249,11 @@ input, button {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+@media screen and (max-width: 425px) {
+  .products-container .products-grid-box {
+    margin: 1rem 0;
+  }
 }
 .products-container .products-grid-box:hover {
   border: 1px solid #D10024;
@@ -245,6 +290,12 @@ input, button {
   gap: 30px;
   margin-bottom: 2rem;
   justify-content: center;
+}
+@media screen and (max-width: 425px) {
+  .deal-container-boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .deal-container-boxes .deal-container-box {
   display: flex;
@@ -283,6 +334,11 @@ input, button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 425px) {
+  .newsletter {
+    text-align: center;
+  }
 }
 .newsletter-title {
   font-size: 1.8rem;
@@ -323,11 +379,28 @@ input, button {
   justify-content: center;
   gap: 35px;
 }
+@media screen and (max-width: 425px) {
+  .footer-top {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+  }
+}
 .footer-top-box:first-child {
   width: 30%;
 }
+@media screen and (max-width: 425px) {
+  .footer-top-box:first-child {
+    width: auto;
+  }
+}
 .footer-top-box {
   width: 20%;
+}
+@media screen and (max-width: 425px) {
+  .footer-top-box {
+    width: auto;
+  }
 }
 .footer-top-box p {
   margin-bottom: 10px;

@@ -12,6 +12,9 @@
     color: variables.$light-color
     font-size: .8rem
 
+    @include mixins.mobile
+      display: none
+
     &-info
       display: flex
       align-items: center
@@ -32,7 +35,9 @@
     align-items: center
     background-color: variables.$bg-color
     border-bottom: 4px solid variables.$primary-color
-      
+
+    @include mixins.mobile
+      flex-direction: column
       
     a
       color: variables.$light-color
@@ -79,6 +84,9 @@
     padding: .5rem 2rem
     box-shadow: 0px 0px 1px 1px rgba(0,0 ,0 ,0.5 )
 
+    @include mixins.mobile
+      display: none
+
     &-list    
       display: flex
       gap: 10px 
@@ -95,6 +103,9 @@
 
 .searchbox
   display: flex
+
+  @include mixins.mobile
+    margin: 2rem 0 
   
   input
     width: 350px
@@ -103,6 +114,9 @@
     border: 1px solid variables.$section-bg-color
     border-top-left-radius: 40px
     border-bottom-left-radius: 40px
+
+    @include mixins.mobile
+      width: 100%
 
     &::placeholder
       font-size: .9rem

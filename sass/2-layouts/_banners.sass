@@ -8,6 +8,9 @@
   gap: 15%
   padding: 1rem 2rem
 
+  @include mixins.mobile
+    flex-direction: column
+
   .banner-box
     width: 275px
     height: 275px
@@ -16,6 +19,9 @@
     border-bottom-right-radius: 50%
     opacity: .8
     position: relative
+
+    @include mixins.mobile
+      margin-bottom: 2rem
 
     &:hover
       opacity: .9
